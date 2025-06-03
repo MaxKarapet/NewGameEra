@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://sx42h784yom0"]
+
+[ext_resource type="Texture2D" uid="uid://bpts2pwqu8y8m" path="res://Assets/тулбокс/Toolbox_Essentials_0530164724_texture_0.png" id="1_432rj"]
+
+[resource]
+albedo_texture = ExtResource("1_432rj")

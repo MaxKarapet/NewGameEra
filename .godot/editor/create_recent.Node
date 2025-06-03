@@ -1,0 +1,14 @@
+MeshInstance3D
+TextureRect
+Label
+ColorRect
+Control
+Button
+VBoxContainer
+CollisionShape3D
+Area3D
+Interactive
+SpotLight3D
+Timer
+StaticBody3D
+Node3D

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bfoyfauo2ggpv"]
+
+[ext_resource type="Texture2D" uid="uid://b47xbhvy8nf44" path="res://Assets/шут/шут_0530163229_texture_0.png" id="1_0n6dx"]
+
+[resource]
+albedo_texture = ExtResource("1_0n6dx")

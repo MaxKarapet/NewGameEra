@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GulagGame", "GulagGame.csproj", "{CB6B29C7-7461-4521-9D3B-21AC3A425C19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB6B29C7-7461-4521-9D3B-21AC3A425C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB6B29C7-7461-4521-9D3B-21AC3A425C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB6B29C7-7461-4521-9D3B-21AC3A425C19}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{CB6B29C7-7461-4521-9D3B-21AC3A425C19}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{CB6B29C7-7461-4521-9D3B-21AC3A425C19}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{CB6B29C7-7461-4521-9D3B-21AC3A425C19}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

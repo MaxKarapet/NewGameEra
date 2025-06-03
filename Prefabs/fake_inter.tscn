@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3 uid="uid://dg8c5fidb6cp6"]
+
+[ext_resource type="Script" uid="uid://bbkteryx4mng5" path="res://Prefabs/fake_inter.gd" id="1_prpk0"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_40cgj"]
+inner_radius = 0.1
+outer_radius = 0.2
+rings = 8
+ring_segments = 4
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6lqir"]
+radius = 1.0
+
+[sub_resource type="Curve" id="Curve_5qs8w"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.242647, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_w7srm"]
+curve = SubResource("Curve_5qs8w")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2ftnm"]
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3(0, -1, 0)
+spread = 90.0
+initial_velocity_min = 2.0
+initial_velocity_max = 4.0
+gravity = Vector3(0, 10, 0)
+scale_min = 0.5
+scale_max = 2.0
+scale_curve = SubResource("CurveTexture_w7srm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s4ok6"]
+transparency = 1
+vertex_color_use_as_albedo = true
+
+[sub_resource type="SphereMesh" id="SphereMesh_b3737"]
+material = SubResource("StandardMaterial3D_s4ok6")
+radius = 0.2
+height = 0.4
+radial_segments = 8
+rings = 4
+
+[node name="FakeInter" type="Node3D" node_paths=PackedStringArray("meshes", "area", "particles")]
+script = ExtResource("1_prpk0")
+meshes = [NodePath("MeshInstance3D")]
+area = NodePath("Interactive")
+time_to_interact = 5
+particles = NodePath("GPUParticles3D")
+metadata/_custom_type_script = "uid://bmyv3pmkhib3l"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("TorusMesh_40cgj")
+
+[node name="Interactive" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactive"]
+shape = SubResource("SphereShape3D_6lqir")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 24
+lifetime = 0.5
+randomness = 1.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_2ftnm")
+draw_pass_1 = SubResource("SphereMesh_b3737")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://m2xr7nqpd1om"]
+
+[ext_resource type="Script" uid="uid://bmyv3pmkhib3l" path="res://Prefabs/interactive.gd" id="1_prd6k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v7wdo"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_prd6k"]
+material = SubResource("StandardMaterial3D_v7wdo")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_w7srm"]
+radius = 0.998451
+
+[sub_resource type="Curve" id="Curve_prd6k"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.242647, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_prd6k"]
+curve = SubResource("Curve_prd6k")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ntinb"]
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3(0, -1, 0)
+spread = 90.0
+initial_velocity_min = 2.0
+initial_velocity_max = 4.0
+gravity = Vector3(0, 10, 0)
+scale_min = 0.5
+scale_max = 2.0
+scale_curve = SubResource("CurveTexture_prd6k")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7srm"]
+transparency = 1
+vertex_color_use_as_albedo = true
+
+[sub_resource type="SphereMesh" id="SphereMesh_1lt3j"]
+material = SubResource("StandardMaterial3D_w7srm")
+radius = 0.2
+height = 0.4
+radial_segments = 8
+rings = 4
+
+[node name="Interactive2" type="Node3D" node_paths=PackedStringArray("meshes", "area", "particles")]
+script = ExtResource("1_prd6k")
+meshes = [NodePath("MeshInstance3D")]
+area = NodePath("Interactive")
+time_to_interact = 5
+particles = NodePath("GPUParticles3D")
+priority = 1
+metadata/_custom_type_script = "uid://bmyv3pmkhib3l"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("SphereMesh_prd6k")
+skeleton = NodePath("../..")
+
+[node name="Interactive" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_mask = 3
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactive"]
+shape = SubResource("SphereShape3D_w7srm")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+light_color = Color(0, 1, 0, 1)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+emitting = false
+amount = 24
+lifetime = 0.5
+randomness = 1.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_ntinb")
+draw_pass_1 = SubResource("SphereMesh_1lt3j")

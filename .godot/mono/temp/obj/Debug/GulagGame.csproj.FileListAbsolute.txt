@@ -1,0 +1,17 @@
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\bin\Debug\GulagGame.deps.json
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\bin\Debug\GulagGame.runtimeconfig.json
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\bin\Debug\GulagGame.dll
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\bin\Debug\GulagGame.pdb
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.csproj.AssemblyReference.cache
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.AssemblyInfoInputs.cache
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.AssemblyInfo.cs
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.csproj.CoreCompileInputs.cache
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.csproj.Up2Date
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.dll
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\refint\GulagGame.dll
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.pdb
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\GulagGame.genruntimeconfig.cache
+C:\Users\gajjer\Documents\GulagGame\.godot\mono\temp\obj\Debug\ref\GulagGame.dll

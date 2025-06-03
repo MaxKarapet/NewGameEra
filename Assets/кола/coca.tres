@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dx11u7nv37pfr"]
+
+[ext_resource type="Texture2D" uid="uid://bl83jmog641qa" path="res://Assets/кола/Nuka_Cola_Machine_0530165328_texture_0.png" id="1_pa2va"]
+
+[resource]
+albedo_texture = ExtResource("1_pa2va")

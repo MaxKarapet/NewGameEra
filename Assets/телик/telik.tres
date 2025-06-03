@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cusn2outcefvq"]
+
+[ext_resource type="Texture2D" uid="uid://dykemyprwr8l1" path="res://Assets/телик/телик_0531094410_texture_0.png" id="1_o3lea"]
+
+[resource]
+albedo_texture = ExtResource("1_o3lea")

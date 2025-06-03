@@ -1,0 +1,256 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cdc43313wk2ex"
+path="res://.godot/imported/prototip0-1.1(1)test_tex.blend-9bfcd9366278cdf570b2d84f0b2bc4f8.scn"
+
+[deps]
+
+source_file="res://Assets/prototip0-1.1(1)test_tex.blend"
+dest_files=["res://.godot/imported/prototip0-1.1(1)test_tex.blend-9bfcd9366278cdf570b2d84f0b2bc4f8.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"@MATERIAL:0": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:1": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:10": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:11": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:12": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:13": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:14": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:15": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:16": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:17": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:18": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:19": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:2": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:20": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:21": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:22": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:23": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:3": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:32": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:33": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:35": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:36": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:38": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:39": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:4": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:40": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:41": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:42": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:43": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:44": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:45": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:46": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:47": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:48": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:49": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:5": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:6": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:7": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:8": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"@MATERIAL:9": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"Material": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"Material.001": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"Material.002": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"Material.004": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"pec": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"trub": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"дерево": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"доска": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"книга": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+},
+"ржавый": {
+"use_external/enabled": true,
+"use_external/path": "uid://dj1t5pl8ymbsu"
+}
+}
+}
+blender/nodes/visible=0
+blender/nodes/active_collection_only=false
+blender/nodes/punctual_lights=true
+blender/nodes/cameras=true
+blender/nodes/custom_properties=true
+blender/nodes/modifiers=1
+blender/meshes/colors=false
+blender/meshes/uvs=true
+blender/meshes/normals=true
+blender/meshes/export_geometry_nodes_instances=false
+blender/meshes/tangents=true
+blender/meshes/skins=2
+blender/meshes/export_bones_deforming_mesh_only=false
+blender/materials/unpack_enabled=true
+blender/materials/export_materials=1
+blender/animation/limit_playback=true
+blender/animation/always_sample=true
+blender/animation/group_tracks=true

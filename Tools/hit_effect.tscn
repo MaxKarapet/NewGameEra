@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://ckxx7vnrm5k21"]
+
+[ext_resource type="Script" uid="uid://p35enb5adi0a" path="res://Tools/hit_effect.gd" id="1_p85tr"]
+
+[sub_resource type="Curve" id="Curve_c0dvn"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_gx746"]
+curve = SubResource("Curve_c0dvn")
+
+[sub_resource type="Curve" id="Curve_wvgss"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.757353, 0.831461), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_dfrpf"]
+curve = SubResource("Curve_wvgss")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1if3k"]
+particle_flag_align_y = true
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 3.0
+initial_velocity_max = 6.0
+scale_min = 0.1
+scale_max = 0.15
+scale_curve = SubResource("CurveTexture_dfrpf")
+color = Color(1, 1, 0, 1)
+emission_curve = SubResource("CurveTexture_gx746")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wik7l"]
+vertex_color_use_as_albedo = true
+emission_enabled = true
+emission = Color(1, 1, 0, 1)
+emission_energy_multiplier = 4.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_o6x4o"]
+material = SubResource("StandardMaterial3D_wik7l")
+bottom_radius = 0.0
+
+[node name="HitEffect" type="GPUParticles3D"]
+emitting = false
+amount = 50
+amount_ratio = 0.1
+lifetime = 0.75
+one_shot = true
+explosiveness = 1.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_1if3k")
+draw_pass_1 = SubResource("CylinderMesh_o6x4o")
+script = ExtResource("1_p85tr")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
